@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
+    margin: 0;
+    color: #222;
+}
+
+nav {
+    background: #4321be;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffb300;
+}
+
+h1 {
+    text-align: center;
+    color: #4321be;
+    margin-top: 0;
+}
+
+section {
+    margin: 30px auto;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 24px;
+}
+
+.sprite-img {
+    width: 120px;
+    height: auto;
+    margin: 10px 0;
+    display: block;
+}
+
+.voltar {
+    display: block;
+    margin: 30px auto 0 auto;
+    width: fit-content;
+    background: #4321be;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.voltar:hover {
+    background: #2d157a;
+}
+
+ul,
+ol {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 18px 30px;
+}
+
+video,
+audio {
+    display: block;
+    margin: 18px auto;
+}
+
+@media (max-width: 700px) {
+
+    section,
+    ul,
+    ol {
+        max-width: 95vw;
+        padding: 10px;
+    }
+
+    .sprite-img {
+        width: 80px;
+    }
+}
+
+/* Pixel-art / sprite helpers */
+.pixelated {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.sprite-frame {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.sprite-frame img {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
